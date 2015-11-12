@@ -1,6 +1,6 @@
 {
   "name": "webpack-custom-directory-default-file-plugin",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Teach webpack to use the anything as the main file for a module",
   "main": "index.js",
   "scripts": {
@@ -16,8 +16,8 @@
     "main",
     "default-file"
   ],
-  "author": "Spencer Alger <email@spalger.com>, HourlyNerd inc",
-  "license": "Apache-2.0",
+  "author": "Author Tobias Koppers, Spencer Alger <email@spalger.com>, HourlyNerd Inc",
+  "license": "MIT",
   "engines": {
     "node": ">=0.12"
   }
