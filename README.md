@@ -58,6 +58,7 @@ or full path to the file that will be the index file.
 ```js
 var CustomDefaultFilePlugin = require('webpack-custom-directory-default-file-plugin');
 var glob = require('glob');
+var basename = require('path').basename;
 
 var webpackConfig = {
   entry: ...,
@@ -69,7 +70,7 @@ var webpackConfig = {
             var files = glob.sync(directory+'/*.idx.js');
             if(files.length == 1){
                 // important: remove ext from path!
-                return done(files[0].replace(/\.\w+$/, ''));
+                return done(basename(files[0], '.js'));
             }
         })
     ]),
